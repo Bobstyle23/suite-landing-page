@@ -126,3 +126,25 @@
     }
   }
 }
+
+@include respond-to($breakpoint-large-tablets) {
+  .main {
+    grid-template-columns: repeat(4, 1fr);
+
+    &__information {
+      grid-column: 1 / 4;
+    }
+
+    &__image {
+      grid-column: 2 / 4;
+    }
+
+    &__stats {
+      grid-row: 1;
+      grid-column: 4;
+      flex-direction: column;
+      text-align: left;
+      gap: 6.3rem;
+    }
+  }
+}

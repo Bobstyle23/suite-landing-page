@@ -244,5 +244,23 @@ button:hover {
     width: 100%;
   }
 }
+@media (min-width: 64em) {
+  .main {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .main__information {
+    grid-column: 1/4;
+  }
+  .main__image {
+    grid-column: 2/4;
+  }
+  .main__stats {
+    grid-row: 1;
+    grid-column: 4;
+    flex-direction: column;
+    text-align: left;
+    gap: 6.3rem;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
