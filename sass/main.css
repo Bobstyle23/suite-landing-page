@@ -173,9 +173,9 @@ button:hover {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 3.5rem;
+  top: -2.7rem;
   width: 100%;
-  height: 100%;
+  height: 1.9rem;
   background: url("../../assets/curved-line-mobile.svg") no-repeat center;
   background-size: contain;
 }
@@ -215,7 +215,8 @@ button:hover {
     letter-spacing: -0.078rem;
   }
   .main .solution::after {
-    bottom: 5.5rem;
+    top: -4.5rem;
+    height: 2.9rem;
     background: url("../../assets/curved-line-tablet.svg") no-repeat center;
   }
   .main__information, .main__image {
@@ -225,6 +226,7 @@ button:hover {
     gap: 4rem;
     grid-column: 1/3;
     z-index: 1;
+    margin: 8.8rem 0 4rem;
   }
   .main__image {
     grid-column: 2/3;
