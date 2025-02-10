@@ -1,0 +1,39 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1;
+  font-weight: 400;
+}
+
+a:visited, a:link, a:active, a:focus {
+  text-decoration: none;
+  color: #000;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button {
+  border: none;
+}
+
+/*# sourceMappingURL=main.css.map */
