@@ -1,8 +1,15 @@
-.header {
+.main__stats, .main__information, .header {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
 }
 
 .btn {
@@ -59,6 +66,13 @@ button:hover {
   cursor: pointer;
 }
 
+.main__stats p:first-of-type {
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 1.16;
+  letter-spacing: -0.05rem;
+}
+
 .btn--primary {
   font-size: 1.8rem;
   font-weight: 700;
@@ -66,7 +80,7 @@ button:hover {
   letter-spacing: -0.02rem;
 }
 
-.btn--secondary {
+.main__stats p:last-of-type, .btn--secondary {
   font-size: 1.6rem;
   font-weight: 700;
   line-height: 1.625;
@@ -127,6 +141,51 @@ button:hover {
     max-width: 111rem;
     margin: 5rem auto 6.7rem;
   }
+}
+.main {
+  row-gap: 5.6rem;
+  max-width: 111rem;
+  margin: 0 1.6rem 5.6rem;
+  position: relative;
+}
+.main__information {
+  flex-flow: column wrap;
+  align-items: flex-start;
+  gap: 3.2rem;
+}
+.main__header {
+  font-size: 3.8rem;
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -0.053rem;
+  color: #172339;
+}
+.main__header span {
+  font-weight: 700;
+}
+.main__description {
+  font-size: 1.6rem;
+  line-height: 1.75;
+  letter-spacing: 0.009rem;
+  color: #49566d;
+}
+.main__stats {
+  flex-direction: column;
+  gap: 3.2rem;
+  text-align: center;
+}
+.main__stats p {
+  text-transform: uppercase;
+}
+.main__stats p:first-of-type {
+  letter-spacing: 0;
+  color: #172339;
+  margin-bottom: 0.1rem;
+}
+.main__stats p:last-of-type {
+  font-weight: 400;
+  letter-spacing: 0.25rem;
+  color: #49566d;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,58 @@
+.main {
+  @extend %grid;
+  row-gap: 5.6rem;
+  max-width: 111rem;
+  margin: 0 1.6rem 5.6rem;
+  position: relative;
+
+  &__information {
+    @extend %flexbox;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    gap: 3.2rem;
+  }
+
+  &__header {
+    font-size: 3.8rem;
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: -0.053rem;
+    color: $color-dark-blue;
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__description {
+    font-size: 1.6rem;
+    line-height: 1.75;
+    letter-spacing: 0.009rem;
+    color: $color-grey;
+  }
+
+  &__stats {
+    @extend %flexbox;
+    flex-direction: column;
+    gap: 3.2rem;
+    text-align: center;
+
+    p {
+      text-transform: uppercase;
+    }
+
+    p:first-of-type {
+      @extend %text-heading-l;
+      letter-spacing: 0;
+      color: $color-dark-blue;
+      margin-bottom: 0.1rem;
+    }
+
+    p:last-of-type {
+      @extend %text-heading-s;
+      font-weight: 400;
+      letter-spacing: 0.25rem;
+      color: $color-grey;
+    }
+  }
+}
