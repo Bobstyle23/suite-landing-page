@@ -146,7 +146,7 @@ button:hover {
   row-gap: 5.6rem;
   max-width: 111rem;
   margin: 0 1.6rem 5.6rem;
-  position: relative;
+  color: #172339;
 }
 .main__information, .main__stats {
   flex-direction: column;
@@ -160,7 +160,6 @@ button:hover {
   font-weight: 400;
   line-height: 1.15;
   letter-spacing: -0.053rem;
-  color: #172339;
 }
 .main__header span {
   font-weight: 700;
@@ -193,7 +192,6 @@ button:hover {
 }
 .main__stats p:first-of-type {
   letter-spacing: 0;
-  color: #172339;
   margin-bottom: 0.1rem;
 }
 .main__stats p:last-of-type {
@@ -264,21 +262,20 @@ button:hover {
 }
 @media (min-width: 75em) {
   .main {
-    margin: 0 16.4rem 0 16.6rem;
+    margin: 0 auto;
   }
   .main__information {
     margin: 10.3rem 0 9.2rem;
-    width: 63.5rem;
   }
   .main__header {
     font-size: 7.2rem;
     line-height: 1.084;
-    letter-spacing: -0.1rem;
+    letter-spacing: -0.045rem;
   }
   .main .solution::after {
     top: -5.3rem;
     height: 4rem;
-    width: 28.7rem;
+    width: 100%;
     background: url("../../assets/curved-line-desktop.svg") no-repeat center;
   }
   .main__description {
