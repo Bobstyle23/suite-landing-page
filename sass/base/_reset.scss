@@ -15,15 +15,16 @@ body {
   line-height: 1;
   font-weight: 400;
   font-family: "Epilogue", sans-serif;
+  background-color: $color-cream;
 }
 
 a {
+  display: inline-block;
   &:visited,
   &:link,
   &:active,
   &:focus {
     text-decoration: none;
-    color: #000;
   }
 
   &:hover {
@@ -33,7 +34,7 @@ a {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 

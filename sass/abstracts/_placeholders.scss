@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-flow: column no-wrap;
+  flex-flow: row wrap;
 }
 
 %grid {
@@ -10,4 +10,10 @@
   grid-template-columns: 1fr;
   align-items: center;
   justify-items: center;
+}
+
+%button-style {
+  width: 25.6rem;
+  height: 6.1rem;
+  border-radius: 0.6rem;
 }

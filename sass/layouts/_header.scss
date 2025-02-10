@@ -1,0 +1,18 @@
+.header {
+  @extend %flexbox;
+  justify-content: space-between;
+  margin: 2.4rem 1.6rem 5.6rem;
+}
+
+@include respond-to($breakpoint-tablets) {
+  .header {
+    margin: 4rem 4rem 8rem;
+  }
+}
+
+@include respond-to($breakpoint-desktops) {
+  .header {
+    max-width: 111rem;
+    margin: 5rem auto 6.7rem;
+  }
+}
