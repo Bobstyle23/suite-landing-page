@@ -148,3 +148,36 @@
     }
   }
 }
+
+@include respond-to($breakpoint-desktops) {
+  .main {
+    margin: 0 auto;
+
+    &__information {
+      margin: 10.3rem 0 9.2rem;
+      width: 63.5rem;
+    }
+
+    &__header {
+      font-size: 7.2rem;
+      line-height: 1.084;
+      letter-spacing: -0.1rem;
+    }
+
+    .solution {
+      &::after {
+        top: -5.3rem;
+        height: 4rem;
+        width: 28.7rem;
+        background: url("../../assets/curved-line-desktop.svg") no-repeat center;
+      }
+    }
+
+    &__description {
+      font-size: 1.8rem;
+      line-height: 1.78;
+      letter-spacing: 0.01rem;
+      margin-bottom: 1.2rem;
+    }
+  }
+}
