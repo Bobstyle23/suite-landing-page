@@ -1,0 +1,43 @@
+.footer {
+  @extend %grid;
+  align-content: end;
+  gap: 3.3rem;
+  min-height: 42rem;
+  background-color: $color-cream;
+  padding-bottom: 8rem;
+
+  &__copyright {
+    @extend %text-footer;
+    color: $color-grey;
+  }
+
+  &__icons {
+    @extend %flexbox;
+    gap: 2.8rem;
+  }
+
+  &__icon {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background: $color-dark-blue;
+    mask-size: cover;
+
+    &--facebook {
+      mask: url("../../assets/icon-facebook.svg") no-repeat center;
+    }
+
+    &--twitter {
+      mask: url("../../assets/icon-twitter.svg") no-repeat center;
+    }
+
+    &--instagram {
+      mask: url("../../assets/icon-instagram.svg") no-repeat center;
+    }
+
+    &:hover {
+      cursor: pointer;
+      background: $color-grey;
+    }
+  }
+}
