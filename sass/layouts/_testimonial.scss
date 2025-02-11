@@ -1,6 +1,5 @@
 .testimonial {
   @extend %grid;
-  place-items: center;
   gap: 4rem;
   width: 100%;
   height: 74.8rem;
@@ -26,7 +25,6 @@
     font-size: 4rem;
     font-weight: 400;
     line-height: 1.2;
-    color: $color-cream-white;
     letter-spacing: -0.042rem;
 
     span {
@@ -38,6 +36,11 @@
     font-weight: 400;
     letter-spacing: 0.009rem;
     color: $color-cream;
+  }
+
+  &__heading,
+  &__author {
+    color: $color-cream-white;
   }
 
   &__review-text,
@@ -52,7 +55,6 @@
 
   &__author {
     text-transform: uppercase;
-    color: $color-cream-white;
     letter-spacing: -0.018rem;
   }
 
@@ -61,5 +63,18 @@
     font-weight: 400;
     color: $color-cream;
     letter-spacing: 0.25rem;
+  }
+}
+
+@include respond-to($breakpoint-tablets) {
+  .testimonial {
+    height: 68.4rem;
+    width: 68.9rem;
+    margin: 0 4rem 0;
+    padding: 0 5.8rem 6.4rem;
+
+    &__image {
+      margin-top: -32%;
+    }
   }
 }
