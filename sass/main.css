@@ -327,4 +327,19 @@ button:hover {
   background: #49566d;
 }
 
+@media (min-width: 48em) {
+  .footer {
+    padding: 0 4rem 7.2rem;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: start;
+    gap: 0;
+  }
+  .footer__copyright {
+    justify-self: center;
+  }
+  .footer__icons {
+    justify-self: end;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

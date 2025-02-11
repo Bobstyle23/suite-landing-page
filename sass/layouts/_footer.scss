@@ -41,3 +41,20 @@
     }
   }
 }
+
+@include respond-to($breakpoint-tablets) {
+  .footer {
+    padding: 0 4rem 7.2rem;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: start;
+    gap: 0;
+
+    &__copyright {
+      justify-self: center;
+    }
+
+    &__icons {
+      justify-self: end;
+    }
+  }
+}
