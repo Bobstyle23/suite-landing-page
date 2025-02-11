@@ -47,6 +47,7 @@
     padding: 0 4rem 7.2rem;
     grid-template-columns: repeat(3, 1fr);
     justify-items: start;
+    min-height: 64rem;
     gap: 0;
 
     &__copyright {
@@ -56,5 +57,12 @@
     &__icons {
       justify-self: end;
     }
+  }
+}
+
+@include respond-to($breakpoint-desktops) {
+  .footer {
+    min-height: 46.4rem;
+    padding: 0 16.5rem 7.2rem;
   }
 }

@@ -332,6 +332,7 @@ button:hover {
     padding: 0 4rem 7.2rem;
     grid-template-columns: repeat(3, 1fr);
     justify-items: start;
+    min-height: 64rem;
     gap: 0;
   }
   .footer__copyright {
@@ -339,6 +340,12 @@ button:hover {
   }
   .footer__icons {
     justify-self: end;
+  }
+}
+@media (min-width: 75em) {
+  .footer {
+    min-height: 46.4rem;
+    padding: 0 16.5rem 7.2rem;
   }
 }
 
