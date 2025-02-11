@@ -70,11 +70,36 @@
   .testimonial {
     height: 68.4rem;
     width: 68.9rem;
-    margin: 0 4rem 0;
+    margin: 0 auto 0;
     padding: 0 5.8rem 6.4rem;
 
     &__image {
       margin-top: -32%;
+    }
+  }
+}
+
+@include respond-to($breakpoint-large-tablets) {
+  .testimonial {
+    height: 54.5rem;
+    grid-template-columns: repeat(3, auto);
+    width: 94.4rem;
+    padding: 0 4rem;
+
+    &__image {
+      margin-top: -15%;
+      img {
+        max-width: initial;
+      }
+    }
+
+    &__review {
+      justify-items: start;
+    }
+
+    &__review-text,
+    &__footer {
+      text-align: left;
     }
   }
 }

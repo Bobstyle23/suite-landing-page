@@ -400,11 +400,31 @@ button:hover {
   .testimonial {
     height: 68.4rem;
     width: 68.9rem;
-    margin: 0 4rem 0;
+    margin: 0 auto 0;
     padding: 0 5.8rem 6.4rem;
   }
   .testimonial__image {
     margin-top: -32%;
+  }
+}
+@media (min-width: 64em) {
+  .testimonial {
+    height: 54.5rem;
+    grid-template-columns: repeat(3, auto);
+    width: 94.4rem;
+    padding: 0 4rem;
+  }
+  .testimonial__image {
+    margin-top: -15%;
+  }
+  .testimonial__image img {
+    max-width: initial;
+  }
+  .testimonial__review {
+    justify-items: start;
+  }
+  .testimonial__review-text, .testimonial__footer {
+    text-align: left;
   }
 }
 
