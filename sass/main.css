@@ -160,6 +160,7 @@ button:hover {
   font-weight: 400;
   line-height: 1.15;
   letter-spacing: -0.053rem;
+  text-wrap: balance;
 }
 .main__header span {
   font-weight: 700;
