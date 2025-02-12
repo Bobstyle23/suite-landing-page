@@ -8,18 +8,65 @@
   border-radius: 1.5rem;
   padding: 0 1.6rem 6.4rem;
 
+  @include respond-to($breakpoint-tablets) {
+    height: 68.4rem;
+    width: 68.9rem;
+    margin: 0 auto;
+    padding: 0 5.8rem 6.4rem;
+    position: absolute;
+    top: -22rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @include respond-to($breakpoint-large-tablets) {
+    height: 54.5rem;
+    grid-template-columns: repeat(3, auto);
+    width: 94.4rem;
+    padding: 0 4rem;
+    top: -28rem;
+  }
+
+  @include respond-to($breakpoint-desktops) {
+    width: 100%;
+    padding: 0 12.5rem 0 11.2rem;
+  }
+
   &__image {
     margin-top: -55%;
+
+    @include respond-to($breakpoint-tablets) {
+      margin-top: -32%;
+    }
+
+    @include respond-to($breakpoint-large-tablets) {
+      margin-top: -15%;
+      img {
+        max-width: initial;
+      }
+    }
   }
 
   &__review {
     @extend %grid;
     grid-template-columns: subgrid;
     gap: 4rem;
+
+    @include respond-to($breakpoint-large-tablets) {
+      justify-items: start;
+    }
+
+    @include respond-to($breakpoint-desktops) {
+      padding: 8.8rem 0;
+    }
   }
 
   &__icon {
     margin-bottom: -0.3rem;
+
+    @include respond-to($breakpoint-large-tablets) {
+      margin-bottom: 16rem;
+    }
   }
 
   &__heading {
@@ -31,6 +78,12 @@
     span {
       font-weight: 700;
     }
+
+    @include respond-to($breakpoint-desktops) {
+      font-size: 4.8rem;
+      line-height: 1.17;
+      letter-spacing: -0.05rem;
+    }
   }
 
   &__review-text {
@@ -38,6 +91,24 @@
     letter-spacing: 0.009rem;
     color: $color-cream;
     opacity: 0.7;
+    text-align: center;
+
+    @include respond-to($breakpoint-large-tablets) {
+      text-align: left;
+    }
+
+    @include respond-to($breakpoint-desktops) {
+      font-size: 2rem;
+      line-height: 1.75;
+      letter-spacing: 0.01rem;
+    }
+  }
+
+  &__footer {
+    text-align: center;
+    @include respond-to($breakpoint-large-tablets) {
+      text-align: left;
+    }
   }
 
   &__heading,
@@ -48,11 +119,6 @@
   &__review-text,
   &__author {
     @extend %text-heading-m;
-  }
-
-  &__footer,
-  &__review-text {
-    text-align: center;
   }
 
   &__author {
@@ -66,76 +132,5 @@
     color: $color-cream;
     letter-spacing: 0.25rem;
     opacity: 0.7;
-  }
-}
-
-@include respond-to($breakpoint-tablets) {
-  .testimonial {
-    height: 68.4rem;
-    width: 68.9rem;
-    margin: 0 auto 0;
-    padding: 0 5.8rem 6.4rem;
-    position: absolute;
-    top: -22rem;
-    left: 50%;
-
-    transform: translateX(-50%);
-
-    &__image {
-      margin-top: -32%;
-    }
-  }
-}
-
-@include respond-to($breakpoint-large-tablets) {
-  .testimonial {
-    height: 54.5rem;
-    grid-template-columns: repeat(3, auto);
-    width: 94.4rem;
-    padding: 0 4rem;
-    top: -28rem;
-
-    &__icon {
-      margin-bottom: 16rem;
-    }
-
-    &__image {
-      margin-top: -15%;
-      img {
-        max-width: initial;
-      }
-    }
-
-    &__review {
-      justify-items: start;
-    }
-
-    &__review-text,
-    &__footer {
-      text-align: left;
-    }
-  }
-}
-
-@include respond-to($breakpoint-desktops) {
-  .testimonial {
-    width: 100%;
-    padding: 0 12.5rem 0 11.2rem;
-
-    &__heading {
-      font-size: 4.8rem;
-      line-height: 1.17;
-      letter-spacing: -0.05rem;
-    }
-
-    &__review-text {
-      font-size: 2rem;
-      line-height: 1.75;
-      letter-spacing: 0.01rem;
-    }
-
-    &__review {
-      padding: 8.8rem 0;
-    }
   }
 }
