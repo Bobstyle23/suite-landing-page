@@ -35,6 +35,10 @@
   &__image {
     margin-top: -55%;
 
+    @media (min-width: 440px) and (max-width: 767px) {
+      margin-top: calc(-20% - 6.4rem);
+    }
+
     @include respond-to($breakpoint-tablets) {
       margin-top: -32%;
     }
