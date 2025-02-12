@@ -329,15 +329,19 @@ button:hover {
   height: 2rem;
   background: #172339;
   mask-size: cover;
+  -webkit-mask-size: cover;
 }
 .footer__icon--facebook {
-  mask: url("/assets/icon-facebook.svg") no-repeat center;
+  mask: url("../assets/icon-facebook.svg") no-repeat center;
+  -webkit-mask: "../assets/icon-facebook.svg" no-repeat center;
 }
 .footer__icon--twitter {
   mask: url("/assets/icon-twitter.svg") no-repeat center;
+  -webkit-mask: "../assets/icon-twitter.svg" no-repeat center;
 }
 .footer__icon--instagram {
   mask: url("/assets/icon-instagram.svg") no-repeat center;
+  -webkit-mask: "../assets/icon-instagram.svg" no-repeat center;
 }
 .footer__icon:hover {
   cursor: pointer;

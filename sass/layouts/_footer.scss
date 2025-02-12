@@ -33,17 +33,21 @@
     height: 2rem;
     background: $color-dark-blue;
     mask-size: cover;
+    -webkit-mask-size: cover;
 
     &--facebook {
-      mask: url("/assets/icon-facebook.svg") no-repeat center;
+      mask: url("../assets/icon-facebook.svg") no-repeat center;
+      -webkit-mask: ("../assets/icon-facebook.svg") no-repeat center;
     }
 
     &--twitter {
       mask: url("/assets/icon-twitter.svg") no-repeat center;
+      -webkit-mask: ("../assets/icon-twitter.svg") no-repeat center;
     }
 
     &--instagram {
       mask: url("/assets/icon-instagram.svg") no-repeat center;
+      -webkit-mask: ("../assets/icon-instagram.svg") no-repeat center;
     }
 
     &:hover {
