@@ -152,7 +152,7 @@ button:hover {
 .main {
   row-gap: 5.6rem;
   max-width: 111rem;
-  margin: 0 1.6rem 5.6rem;
+  margin: 0 1.6rem 23.7rem;
   color: #172339;
 }
 .main__information, .main__stats {
@@ -211,7 +211,7 @@ button:hover {
 @media (min-width: 48em) {
   .main {
     grid-template-columns: repeat(2, 1fr);
-    margin: 0 4rem 9.2rem;
+    margin: 0 4rem 27.3rem;
     row-gap: 8.8rem;
     justify-items: start;
   }
@@ -270,7 +270,7 @@ button:hover {
 }
 @media (min-width: 75em) {
   .main {
-    margin: 0 auto;
+    margin: 0 auto 20rem;
   }
   .main__information {
     margin: 10.3rem 0 9.2rem;
@@ -296,7 +296,7 @@ button:hover {
 .footer {
   grid-template-rows: repeat(2, auto);
   justify-items: stretch;
-  min-height: 42rem;
+  height: 42rem;
   background-color: #f3ede7;
   padding-bottom: 8rem;
 }
@@ -335,7 +335,7 @@ button:hover {
 @media (min-width: 48em) {
   .footer {
     padding: 0 4rem 7.2rem;
-    min-height: 64rem;
+    height: 64rem;
   }
   .footer__information {
     grid-template-columns: repeat(3, 1fr);
@@ -351,7 +351,7 @@ button:hover {
 }
 @media (min-width: 75em) {
   .footer {
-    min-height: 46.4rem;
+    height: 46.4rem;
     padding: 0 18.45rem 7.2rem;
   }
 }
