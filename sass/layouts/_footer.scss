@@ -35,15 +35,15 @@
     mask-size: cover;
 
     &--facebook {
-      mask: url("../../assets/icon-facebook.svg") no-repeat center;
+      mask: url("../assets/icon-facebook.svg") no-repeat center;
     }
 
     &--twitter {
-      mask: url("../../assets/icon-twitter.svg") no-repeat center;
+      mask: url("../assets/icon-twitter.svg") no-repeat center;
     }
 
     &--instagram {
-      mask: url("../../assets/icon-instagram.svg") no-repeat center;
+      mask: url("../assets/icon-instagram.svg") no-repeat center;
     }
 
     &:hover {
