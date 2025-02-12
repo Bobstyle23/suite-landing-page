@@ -450,7 +450,7 @@ button:hover {
 .testimonial__image {
   margin-top: -55%;
 }
-@media (min-width: 440px) and (max-width: 767px) {
+@media (min-width: 27.5em) {
   .testimonial__image {
     margin-top: calc(-20% - 6.4rem);
   }

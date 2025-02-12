@@ -35,7 +35,7 @@
   &__image {
     margin-top: -55%;
 
-    @media (min-width: 440px) and (max-width: 767px) {
+    @include respond-to("(min-width: 27.5em)") {
       margin-top: calc(-20% - 6.4rem);
     }
 
