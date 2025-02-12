@@ -272,7 +272,8 @@ button:hover {
     text-align: left;
     gap: 6.3rem;
     align-self: start;
-    margin: 10.7rem 0 11.8rem;
+    width: auto;
+    margin: 10.7rem 0 11.8rem 9.6rem;
   }
 }
 @media (min-width: 75em) {
