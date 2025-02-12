@@ -407,6 +407,7 @@ button:hover {
   font-weight: 400;
   letter-spacing: 0.009rem;
   color: #f3ede7;
+  opacity: 0.7;
 }
 .testimonial__heading, .testimonial__author {
   color: #faf8f6;
@@ -422,6 +423,7 @@ button:hover {
   font-weight: 400;
   color: #f3ede7;
   letter-spacing: 0.25rem;
+  opacity: 0.7;
 }
 
 @media (min-width: 48em) {
