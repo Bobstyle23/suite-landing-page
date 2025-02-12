@@ -1,10 +1,17 @@
 .footer {
   @extend %grid;
-  align-content: end;
-  gap: 3.3rem;
+  grid-template-rows: repeat(2, auto);
+  justify-items: stretch;
   min-height: 42rem;
   background-color: $color-cream;
   padding-bottom: 8rem;
+
+  &__information {
+    @extend %grid;
+    grid-row: 2;
+    gap: 3.3rem;
+    align-self: end;
+  }
 
   &__copyright {
     @extend %text-footer;
@@ -45,10 +52,13 @@
 @include respond-to($breakpoint-tablets) {
   .footer {
     padding: 0 4rem 7.2rem;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: start;
     min-height: 64rem;
-    gap: 0;
+
+    &__information {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+      justify-items: start;
+    }
 
     &__copyright {
       justify-self: center;

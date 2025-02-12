@@ -5,7 +5,7 @@
   flex-flow: row wrap;
 }
 
-.testimonial__review, .testimonial, .footer, .main {
+.testimonial__review, .testimonial, .footer__information, .footer, .main {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
@@ -294,11 +294,16 @@ button:hover {
   }
 }
 .footer {
-  align-content: end;
-  gap: 3.3rem;
+  grid-template-rows: repeat(2, auto);
+  justify-items: stretch;
   min-height: 42rem;
   background-color: #f3ede7;
   padding-bottom: 8rem;
+}
+.footer__information {
+  grid-row: 2;
+  gap: 3.3rem;
+  align-self: end;
 }
 .footer__copyright {
   color: #49566d;
@@ -330,10 +335,12 @@ button:hover {
 @media (min-width: 48em) {
   .footer {
     padding: 0 4rem 7.2rem;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: start;
     min-height: 64rem;
+  }
+  .footer__information {
+    grid-template-columns: repeat(3, 1fr);
     gap: 0;
+    justify-items: start;
   }
   .footer__copyright {
     justify-self: center;
