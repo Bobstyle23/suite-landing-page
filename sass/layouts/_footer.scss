@@ -1,8 +1,9 @@
 .footer {
   @extend %grid;
   grid-template-rows: repeat(2, auto);
+  row-gap: 5.6rem;
   justify-items: stretch;
-  height: 42rem;
+  min-height: 42rem;
   background-color: $color-cream;
   padding-bottom: 8rem;
 

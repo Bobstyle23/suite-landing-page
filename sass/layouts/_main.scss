@@ -17,7 +17,7 @@
   }
 
   &__header {
-    font-size: 3.8rem;
+    font-size: clamp(1.8rem, 10vw, 7.2rem);
     font-weight: 400;
     line-height: 1.15;
     letter-spacing: -0.053rem;

@@ -163,7 +163,7 @@ button:hover {
   align-items: flex-start;
 }
 .main__header {
-  font-size: 3.8rem;
+  font-size: clamp(1.8rem, 10vw, 7.2rem);
   font-weight: 400;
   line-height: 1.15;
   letter-spacing: -0.053rem;
@@ -295,8 +295,9 @@ button:hover {
 }
 .footer {
   grid-template-rows: repeat(2, auto);
+  row-gap: 5.6rem;
   justify-items: stretch;
-  height: 42rem;
+  min-height: 42rem;
   background-color: #f3ede7;
   padding-bottom: 8rem;
 }
