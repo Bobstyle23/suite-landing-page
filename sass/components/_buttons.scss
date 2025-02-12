@@ -1,6 +1,6 @@
 .btn {
   @extend %button-style;
-  transition: background-color 0.2s ease-in-out;
+  transition: all 0.2s ease-in;
 
   &--primary {
     @extend %text-heading-m;
@@ -36,12 +36,8 @@
       color: $color-cream-white;
       box-shadow: none;
     }
-  }
-}
 
-@include respond-to($breakpoint-tablets) {
-  .btn {
-    &--secondary {
+    @include respond-to($breakpoint-tablets) {
       font-size: 1.6rem;
       line-height: 2;
       letter-spacing: -0.016rem;
