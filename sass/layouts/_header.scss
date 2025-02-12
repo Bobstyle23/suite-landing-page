@@ -1,7 +1,8 @@
 .header {
   @extend %flexbox;
   justify-content: space-between;
-  margin: 2.4rem 1.6rem 5.6rem;
+  margin: 2.4rem 1.6rem 8.4rem;
+  max-width: 111rem;
 }
 
 @include respond-to($breakpoint-tablets) {
@@ -12,7 +13,6 @@
 
 @include respond-to($breakpoint-desktops) {
   .header {
-    max-width: 111rem;
     margin: 5rem auto 6.7rem;
   }
 }

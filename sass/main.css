@@ -135,7 +135,8 @@ button:hover {
 }
 .header {
   justify-content: space-between;
-  margin: 2.4rem 1.6rem 5.6rem;
+  margin: 2.4rem 1.6rem 8.4rem;
+  max-width: 111rem;
 }
 
 @media (min-width: 48em) {
@@ -145,7 +146,6 @@ button:hover {
 }
 @media (min-width: 75em) {
   .header {
-    max-width: 111rem;
     margin: 5rem auto 6.7rem;
   }
 }
@@ -163,7 +163,7 @@ button:hover {
   align-items: flex-start;
 }
 .main__header {
-  font-size: clamp(1.8rem, 10vw, 7.2rem);
+  font-size: 10vw;
   font-weight: 400;
   line-height: 1.15;
   letter-spacing: -0.053rem;
