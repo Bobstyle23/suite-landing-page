@@ -372,8 +372,7 @@ button:hover {
 @media (min-width: 75em) {
   .footer {
     height: 46.4rem;
-    padding: 0 18.45rem 7.2rem;
-    /* padding: 0 16.7rem 7.2rem 16.4rem; */
+    padding: 0 16.7rem 7.2rem 16.4rem;
   }
 }
 .testimonial {

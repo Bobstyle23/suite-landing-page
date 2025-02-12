@@ -82,7 +82,6 @@
 @include respond-to($breakpoint-desktops) {
   .footer {
     height: 46.4rem;
-    padding: 0 18.45rem 7.2rem;
-    /* padding: 0 16.7rem 7.2rem 16.4rem; */
+    padding: 0 16.7rem 7.2rem 16.4rem;
   }
 }
