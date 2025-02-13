@@ -212,7 +212,7 @@ button:hover {
   }
 }
 .main__header {
-  font-size: 10vw;
+  font-size: 3.8rem;
   font-weight: 400;
   line-height: 1.15;
   letter-spacing: -0.053rem;
@@ -231,8 +231,9 @@ button:hover {
 @media (min-width: 75em) {
   .main__header {
     font-size: 7.2rem;
-    line-height: 1.084;
-    letter-spacing: -0.045rem;
+    line-height: 7.8rem;
+    letter-spacing: -0.01rem;
+    /* letter-spacing: -0.045rem; */
   }
 }
 .main .solution {
