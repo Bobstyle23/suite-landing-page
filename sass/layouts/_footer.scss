@@ -16,7 +16,6 @@
 
   @include respond-to($breakpoint-desktops) {
     height: 46.4rem;
-    padding: 0 16.7rem 7.2rem 16.4rem;
   }
 
   &__information {
@@ -26,6 +25,7 @@
     align-self: end;
     max-width: 111rem;
     width: 100%;
+    margin: 0 auto;
 
     @include respond-to($breakpoint-tablets) {
       grid-template-columns: repeat(3, 1fr);
