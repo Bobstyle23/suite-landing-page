@@ -232,8 +232,7 @@ button:hover {
   .main__header {
     font-size: 7.2rem;
     line-height: 7.8rem;
-    letter-spacing: -0.01rem;
-    /* letter-spacing: -0.045rem; */
+    letter-spacing: -0.045rem;
   }
 }
 .main .solution {
